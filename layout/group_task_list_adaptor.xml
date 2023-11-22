@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/background_layout2"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+
+    <TextView
+        android:id="@+id/description2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:paddingLeft="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="description"
+        android:textColor="@color/black"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="15">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:text="Assigned to"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:paddingLeft="10dp"
+            android:id="@+id/assign_text"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:text="Not Completed"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:layout_height="wrap_content"
+            android:id="@+id/task_status2"/>
+    </LinearLayout>
+
+
+</LinearLayout>

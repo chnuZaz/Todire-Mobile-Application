@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:weightSum="20"
+    android:background="@drawable/gradient_background4">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/top_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#AFA11E"
+        app:subtitle="Todire"
+        app:subtitleTextColor="@color/heading_color"
+        app:title="My Tasks"
+        app:titleTextColor="@color/heading_color"
+        style="@style/CustomToolbarStyle" />
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_frame"
+        android:layout_weight="18"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation_bar"
+        app:menu="@menu/navigation_menu"
+        android:layout_weight="2"
+        android:background="#0B1822"/>
+</LinearLayout>

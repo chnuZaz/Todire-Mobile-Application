@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:background="@drawable/group_list_background"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:paddingLeft="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Group Name"
+        android:textColor="#000000"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:id="@+id/adminName"/>
+
+
+</LinearLayout>

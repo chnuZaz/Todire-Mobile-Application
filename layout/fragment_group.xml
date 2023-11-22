@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".GroupFragment"
+    android:layout_weight="10"
+    android:weightSum="10"
+    android:padding="10dp"
+    android:background="@drawable/gradient_background3">
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:id="@+id/group_list"
+        android:visibility="gone"
+        android:divider="@null"
+        android:dividerHeight="5dp"/>
+    <ProgressBar
+        android:padding="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:id="@+id/group_list_progressbar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="50dp"
+        android:text="You Don't have Any Groups yet... "
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:id="@+id/emptt_groups"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:gravity="bottom"
+        android:paddingBottom="10dp">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:hint="Enter Group ID"
+            android:id="@+id/group_id"
+            android:textColorHint="#000000"
+            android:padding="10dp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="join"
+            android:layout_weight="3"
+            android:id="@+id/join_btn"
+            android:backgroundTint="#2DA196"/>
+    </LinearLayout>
+
+</LinearLayout>

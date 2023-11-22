@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupInside"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/group_inside_toolbar"
+        app:title="Group"
+        app:menu="@menu/group_inside_toolbar_menu"
+        android:background="@drawable/gradient_background4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/gradient_background3">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty_group_task_text"
+        android:text="No Any Tasks yet..."
+        android:gravity="center"
+        android:textSize="20dp"
+        android:padding="50dp"
+        android:textStyle="italic"
+        android:visibility="gone"
+        android:textColor="#000000"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/group_task_list"
+        android:divider="@null"
+        android:dividerHeight="5dp"/>
+    </LinearLayout>
+</LinearLayout>
